@@ -1,0 +1,531 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-orange:#e3bd6f;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Start Header */
+
+header {
+    background: url('../img/back3.jpg') center center/cover no-repeat ;
+    height: 100vh;
+    position: relative;
+}
+
+header .navbar img {
+    width: 120px;
+    margin-left: 100px;
+}
+
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+nav ul {
+    display: flex;
+    margin-right: 100px;
+}
+nav ul li a {
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+    
+}
+nav ul li a:hover {
+    border-bottom: 2px solid var(--color-orange);
+}
+
+header .contact-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 75%;
+    color: white;
+}
+header .contact-header h1 {
+    font-size: 40px;
+}
+header .contact-header p {
+    padding: 20px 0 40px ;
+}
+ span {
+    color: #e3bd6f;
+}
+.btn {
+    font-size: 16px;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+header .contact-header .btn-primery {
+    border: 1px solid white;
+}
+header .contact-header a:hover {
+    background-color:#e3bd6f ;
+
+}
+
+header::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+header * {
+    z-index: 10;
+}
+
+/* Start Main */
+
+.about {
+    height: 80vh;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section .title h2 {
+    font-size: 40px;
+    color: #383848;
+    margin-bottom: 20px;
+}
+section .title p {
+    font-weight: 600;
+    font-size: 14px;
+    color: #9a9a9a;
+}
+
+section .about-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+section .about-content p {
+    
+    margin-right: 112px;
+    line-height: 1.7;
+    color: #383848;
+    font-weight: 500;
+}
+section .about-content .btn-secondry {
+    background-color: #383848;
+    display: inline-block;
+    margin-top: 30px;
+    
+}
+section .about-content .btn-secondry:hover {
+    background-color: var(--color-orange);
+}
+section .about-content img {
+    width: 450px;
+}
+
+/* Start Offers */
+
+.offers {
+    background: url('../img/offer-background.jpg') center center/cover fixed;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+.offers .title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.offers .title p {
+    color: white;
+}
+.offers .title h2 {
+    color: var(--color-orange);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.offers .offers-content {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.offers-content .box img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.offers-content .box h3 {
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.offers-content .box p {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
+
+.offers-content .box span {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+
+/* Start Menu */
+.menu {
+    background-color:#f4f2ed;
+    padding: 5rem 0;
+}
+.menu .container .title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.menu .title h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.menu .menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .box  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+
+.menu .box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.menu .box h3 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #9a9a9a ;
+    padding-bottom: 10px;
+    
+}
+.menu .box p {
+    margin-top: 10px;
+}
+
+.menu .btn {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    background-color:#e3bd6f ;
+    text-transform: uppercase;
+    border: none;
+    transition: 0.2s;
+    cursor: pointer;
+    font-size: 14px;
+}
+.menu .btn-three:hover {
+    background-color: #383848;
+}
+
+/* Start Time */
+.time {
+    background: url('../img/daytime_bg.jpeg') center center/cover fixed no-repeat;
+    text-align: center;
+    color: white;
+    
+}
+
+.time .content-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+.time .content-card .card h3 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-size: 32px;
+}
+
+
+/* Start Our food */
+
+.our-food {
+    background: url('../img/offer-background.jpg') center center/cover fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 0 6rem;
+    
+}
+.our-food .title h2 {
+    color: white;
+    text-align: center;
+}
+.our-food .gallery {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.our-food img {
+    width: 240px;
+    height: 230px;
+    border-radius: 20px;
+    margin: 20px;
+    opacity: 0.7;
+    transition: 0.1s;
+}
+.our-food img:hover {
+    opacity: 1;
+}
+
+/* Start Contact */
+.contact {
+    background-color: #f4f2ed;
+    padding: 5rem 0;
+}
+    
+
+.contact .container {
+    max-width: 900px;
+}
+
+.contact .contact-content .info {
+    width: 50%;
+}
+.contact .contact-content .info div {
+    margin: 30px 0;
+    line-height: 1.6;
+}
+.contact .contact-content .info h3 {
+    font-size: 28px;
+    color: #383848;
+    margin-bottom: 10px;
+}
+.contact .contact-content p {
+    color:#9a9a9a;
+}
+.contact .contact-content p i {
+    margin-right: 10px;
+    color: #e3bd6f;
+    font-size: 15px;
+}
+.contact .contact-content div:last-child i {
+    color: #fff;
+    background: #383848;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.contact .contact-content div:last-child i:hover {
+    background-color: #e3bd6f;
+    color: #383848;
+}
+
+
+.contact .contact-content  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+/* form */
+.contact  form  {
+    width: 50%;
+    
+}
+form input,textarea {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px 15px;
+    background-color: #e3e2dd;
+    border: none;
+}
+form input:focus,textarea:focus {
+    outline: none;
+}
+form input::placeholder,textarea::placeholder {
+    padding-left: 5px;
+}
+
+button.btn {
+    display: block;
+    background-color:#e3bd6f ;
+    text-transform: uppercase;
+    border: none;
+    transition: 0.2s;
+    cursor: pointer;
+    font-size: 14px;
+}
+button.btn-three:hover {
+    background-color: #383848;
+}
+
+
+/*  Start Footer */
+footer {
+    background-color: #383848;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Start Media */
+
+@media (max-width: 992px) {
+    header .navbar img {
+        margin-left: 20px;
+    }
+    header .navbar nav ul {
+        margin-right: 20px;
+        
+    }
+    header .navbar nav ul li a {
+        padding: 10px;
+    }
+    header .contact-header h1 {
+        font-size: 28px;
+    }
+    section .title h2 {
+        font-size: 35px;
+        
+    }
+    #about {
+        height: auto;
+        padding: 4rem 2rem;
+    }
+    #about img {
+        width: 250px;
+    }
+    .offers .offers-content img {
+        width: 150px;
+        height: 150px;
+    }
+    .offers-content .box h3 {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .menu .menu-items {
+        flex-direction: column;
+        
+    }
+    .menu .box {
+        margin: 0;
+        padding: 20px;
+    }
+    .contact .contact-content {
+        flex-direction: column;
+    }
+}
+/* ///////////////////// */
+
+@media (max-width: 600px) {
+    header .navbar  {
+        flex-direction: column;
+        text-align: center;
+    }
+    header .navbar img {
+       width: 100px;
+    }
+    header .navbar nav ul {
+        margin-left: 30px;
+        
+    }
+    header .contact-header h1 {
+        font-size: 18px;
+    }
+    header .contact-header p {
+        font-size: 16px;
+    }
+    
+    /* about */
+    
+    #about img {
+        display: none;
+    }
+    section .about-content p {
+        text-align: left;
+        width: 100%;
+        line-height: 2;
+    }
+
+    /* Offers */
+    .offers {
+        height: auto;
+        padding: 30px 10px;
+    }
+    .offers .offers-content {
+        flex-direction: column;
+
+    }
+
+    /* Time */
+    .time {
+        
+    }
+    
+    .time .content-card {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 0;
+    }
+    .time .content-card .card {
+        margin-top: 20px;
+    }
+
+    /* Gallery */
+    .our-food .gallery {
+        flex-direction: column;
+    }
+    /* Footer */
+    footer {
+        font-size: 12px;
+        padding: 15px;
+    }
+}
